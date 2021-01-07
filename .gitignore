@@ -1,0 +1,4 @@
+caffe/
+data/
+caffe_sentibank_train_iter_250000
+english_inception_mvso-hybrid.caffemodel
