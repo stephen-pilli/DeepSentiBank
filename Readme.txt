@@ -21,5 +21,17 @@ sudo apt-get install libboost-dev
 sudo apt-get install libcaffe-cpu-dev
 sudo apt-get install libgflags-dev
 sudo apt install libgoogle-glog-dev
+
 nvcc extract_nfeatures.cpp -o extract_nfeatures -lprotobuf -lglog -lpthread -lboost_system -lcaffe
+
+python sentiBank.py test_vso/image_path_list.txt GPU 0
+
+GPU LIB REQ:
+cuda 10.2
+cublas
+cudnn 7.5 for 10.2
+
+caffe compilation requires latest version of cmake.
+
+
 
