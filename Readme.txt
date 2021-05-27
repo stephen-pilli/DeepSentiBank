@@ -17,10 +17,14 @@ Please cite:
   year={2014}
 }
 
+ubuntu 17.04 or greater {
+
 sudo apt-get install libboost-dev
 sudo apt-get install libcaffe-cpu-dev
 sudo apt-get install libgflags-dev
 sudo apt install libgoogle-glog-dev
+
+}
 
 nvcc extract_nfeatures.cpp -o extract_nfeatures -lprotobuf -lglog -lpthread -lboost_system -lcaffe
 
@@ -32,6 +36,10 @@ cublas
 cudnn 7.5 for 10.2
 
 caffe compilation requires latest version of cmake.
+
+caffe installtion link
+https://caffe.berkeleyvision.org/install_apt.html
+
 
 
 
